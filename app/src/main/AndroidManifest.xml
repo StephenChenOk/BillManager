@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chen.fy.mytext.billsApp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.chen.fy.mytext.billsApp.StartActivity"
+            android:label="账单管理系统">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chen.fy.mytext.billsApp.RegisterActivity"
+            android:label="注册账号">
+        </activity>
+        <activity
+            android:name="com.chen.fy.mytext.billsApp.LoginViewActivity"
+            android:label="登入账号">
+        </activity>
+        <activity
+            android:name="com.chen.fy.mytext.billsApp.MainActivity"
+            android:label="记账宝">
+        </activity>
+        <activity
+            android:name="com.chen.fy.mytext.billsApp.ModifyInfo"
+            android:label="编辑个人信息">
+        </activity>
+        <activity
+            android:name="com.chen.fy.mytext.billsApp.ModifyPassword"
+            android:label="修改密码">
+        </activity>
+        <activity
+            android:name="com.chen.fy.mytext.billsApp.InputIncomeActivity"
+            android:label="输入收入数目">
+        </activity>
+        <activity
+            android:name="com.chen.fy.mytext.billsApp.InputPayActivity"
+            android:label="输入支出数目">
+        </activity>
+    </application>
+
+</manifest>

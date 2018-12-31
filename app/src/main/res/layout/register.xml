@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/register_userName"
+        android:hint="用户名 (以小写字母开头且不少于8位数)"
+        android:background="@drawable/text_frame1"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <EditText
+        android:id="@+id/passWord1"
+        android:hint="密码 (不少于8位数)"
+        android:inputType="textPassword"
+        android:background="@drawable/text_frame1"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_userName"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <EditText
+        android:id="@+id/passWord2"
+        android:hint="确认密码:"
+        android:inputType="textPassword"
+        android:background="@drawable/text_frame1"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passWord1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:background="@drawable/btn_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPage"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="9"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="#bbb"
+        android:layout_height="1dp">
+    </View>
+
+    <RadioGroup
+        android:id="@+id/radio_group_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioBtn_table"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/bg_table"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="报表"
+            android:textColor="@drawable/text_color"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/bg_detail"
+            android:layout_marginTop="2dp"
+            android:checked="true"
+            android:text="账单明细"
+            android:textColor="@drawable/text_color"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_count"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/bg_count"
+            android:layout_marginTop="2dp"
+            android:text="记一笔"
+            android:textColor="@drawable/text_color"/>
+
+        <RadioButton
+            android:id="@+id/radioBtn_info"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/bg_info"
+            android:layout_marginTop="2dp"
+            android:text="我的信息"
+            android:textColor="@drawable/text_color"/>
+    </RadioGroup>
+
+</LinearLayout>

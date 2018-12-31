@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/count_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector2"
+        android:layout_marginTop="5dp"
+        android:text="工资" />
+
+    <Button
+        android:id="@+id/count_part_time_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector2"
+        android:layout_marginTop="5dp"
+        android:text="兼职" />
+
+    <Button
+        android:id="@+id/count_shares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector2"
+        android:layout_marginTop="5dp"
+        android:text="股票" />
+
+    <Button
+        android:id="@+id/count_income_red_paper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector2"
+        android:layout_marginTop="5dp"
+        android:text="收红包" />
+
+    <Button
+        android:id="@+id/count_income_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_selector2"
+        android:layout_marginTop="5dp"
+        android:text="其他" />
+
+</LinearLayout>

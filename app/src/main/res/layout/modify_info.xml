@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/info" />
+
+    <!--性别-->
+    <RadioGroup
+        android:id="@+id/radio_group_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/user"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="性别:"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/btn_sex_nan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:text="男"
+            android:textColor="#8A000000"
+            android:textSize="18dp" />
+
+        <RadioButton
+            android:id="@+id/btn_sex_nv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="女"
+            android:textColor="#8A000000"
+            android:textSize="18dp" />
+
+    </RadioGroup>
+
+    <!--生日-->
+    <LinearLayout
+        android:id="@+id/birthday_box"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/radio_group_info"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="生日:"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/modify_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/text_frame1"
+            android:onClick="birthdayDate_btn"
+            android:padding="5dp"
+            android:text="年-月-日"
+            android:textColor="#8A000000"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <!--电话号码-->
+    <LinearLayout
+        android:id="@+id/phone_box"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/birthday_box"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="电话号码:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/modify_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/text_frame1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="123"
+            android:textColor="#8A000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <!--地址-->
+    <LinearLayout
+        android:id="@+id/address_box"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/phone_box"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="地址:"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/modify_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/text_frame1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="广西"
+            android:textColor="#8A000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish_modify_info_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/btn_selector"
+        android:text="编辑完成"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</RelativeLayout>

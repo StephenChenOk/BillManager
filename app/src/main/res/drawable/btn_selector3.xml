@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- not focused state-->
+    <item android:state_focused="false" android:state_selected="false" android:state_pressed="false">
+        <shape>
+            <solid android:color="#eee"></solid>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+    <item android:state_focused="false" android:state_selected="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="#ff9900"></solid>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+
+    <!-- focused state-->
+    <item android:state_focused="true" android:state_selected="false" android:state_pressed="false">
+        <shape>
+            <solid android:color="#ff9900"></solid>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+    <item android:state_focused="true" android:state_selected="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="#ff9900"></solid>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+
+    <!-- pressed -->
+    <item android:state_selected="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="#ff9900"></solid>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#ff9900"></solid>
+            <corners android:radius="5dp"></corners>
+        </shape>
+    </item>
+
+</selector>
